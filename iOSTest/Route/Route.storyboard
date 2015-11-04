@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="akf-3D-foH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Route View Controller-->
+        <scene sceneID="LoI-45-kGR">
+            <objects>
+                <viewController id="akf-3D-foH" customClass="RouteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZeY-7J-5FD"/>
+                        <viewControllerLayoutGuide type="bottom" id="85Z-QL-GLH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ymw-aa-rAE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP7-zH-umb">
+                                <rect key="frame" x="20" y="28" width="560" height="30"/>
+                                <state key="normal" title="Route"/>
+                                <connections>
+                                    <action selector="routePressed:" destination="akf-3D-foH" eventType="touchUpInside" id="fyw-dR-zlr"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vX8-SV-N8k">
+                                <rect key="frame" x="0.0" y="66" width="600" height="534"/>
+                                <connections>
+                                    <outlet property="delegate" destination="akf-3D-foH" id="QmI-sD-xfe"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vX8-SV-N8k" firstAttribute="top" secondItem="JP7-zH-umb" secondAttribute="bottom" constant="8" symbolic="YES" id="TT6-C5-F92"/>
+                            <constraint firstItem="JP7-zH-umb" firstAttribute="leading" secondItem="ymw-aa-rAE" secondAttribute="leadingMargin" id="bcI-5z-v9K"/>
+                            <constraint firstItem="vX8-SV-N8k" firstAttribute="leading" secondItem="ymw-aa-rAE" secondAttribute="leading" id="dzh-Sj-RIM"/>
+                            <constraint firstItem="JP7-zH-umb" firstAttribute="top" secondItem="ZeY-7J-5FD" secondAttribute="bottom" constant="8" symbolic="YES" id="gFg-cq-4w1"/>
+                            <constraint firstItem="85Z-QL-GLH" firstAttribute="top" secondItem="vX8-SV-N8k" secondAttribute="bottom" id="rXD-ex-k1V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JP7-zH-umb" secondAttribute="trailing" id="wNE-bZ-W4l"/>
+                            <constraint firstAttribute="trailing" secondItem="vX8-SV-N8k" secondAttribute="trailing" id="wql-KT-UUW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="vX8-SV-N8k" id="liQ-yB-6u9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4h9-h2-ncQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="395"/>
+        </scene>
+    </scenes>
+</document>

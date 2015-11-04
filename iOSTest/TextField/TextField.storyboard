@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5v1-MH-R4a">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text Field View Controller-->
+        <scene sceneID="1z6-kl-TFY">
+            <objects>
+                <viewController id="5v1-MH-R4a" customClass="TextFieldViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zdt-2M-M72"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xyu-ai-1JE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tqZ-QV-UHj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VqC-b1-YTq" userLabel="text_field_1">
+                                <rect key="frame" x="20" y="28" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g9I-fp-fuz" userLabel="text_field_2">
+                                <rect key="frame" x="20" y="66" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gNQ-Z1-GHU" userLabel="text_field_3">
+                                <rect key="frame" x="20" y="104" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KRg-Nw-Rug">
+                                <rect key="frame" x="293" y="293" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Op4-GE-KH0"/>
+                                    <constraint firstAttribute="width" constant="14" id="Tgb-Iz-uRJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g9I-fp-fuz" firstAttribute="top" secondItem="VqC-b1-YTq" secondAttribute="bottom" constant="8" symbolic="YES" id="8wA-gJ-wpF"/>
+                            <constraint firstItem="VqC-b1-YTq" firstAttribute="top" secondItem="zdt-2M-M72" secondAttribute="bottom" constant="8" symbolic="YES" id="L0N-5s-cos"/>
+                            <constraint firstItem="gNQ-Z1-GHU" firstAttribute="leading" secondItem="tqZ-QV-UHj" secondAttribute="leadingMargin" id="QHS-Bj-RcE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VqC-b1-YTq" secondAttribute="trailing" id="Uzp-Cm-G7q"/>
+                            <constraint firstItem="KRg-Nw-Rug" firstAttribute="centerX" secondItem="tqZ-QV-UHj" secondAttribute="centerX" id="XKA-LL-Ddh"/>
+                            <constraint firstItem="VqC-b1-YTq" firstAttribute="leading" secondItem="tqZ-QV-UHj" secondAttribute="leadingMargin" id="ZaU-0E-D9a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gNQ-Z1-GHU" secondAttribute="trailing" id="bPQ-HG-Kut"/>
+                            <constraint firstItem="KRg-Nw-Rug" firstAttribute="centerY" secondItem="tqZ-QV-UHj" secondAttribute="centerY" id="fen-lR-Xy6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g9I-fp-fuz" secondAttribute="trailing" id="nQL-lZ-9jz"/>
+                            <constraint firstItem="g9I-fp-fuz" firstAttribute="leading" secondItem="tqZ-QV-UHj" secondAttribute="leadingMargin" id="nkS-th-N8c"/>
+                            <constraint firstItem="gNQ-Z1-GHU" firstAttribute="top" secondItem="g9I-fp-fuz" secondAttribute="bottom" constant="8" symbolic="YES" id="obn-Xu-1GU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="KRg-Nw-Rug" id="WTe-5M-2xN"/>
+                        <outlet property="textField1" destination="VqC-b1-YTq" id="k1e-kZ-0On"/>
+                        <outlet property="textField2" destination="g9I-fp-fuz" id="HRr-E3-gxZ"/>
+                        <outlet property="textField3" destination="gNQ-Z1-GHU" id="QCc-7j-hfN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vsg-Np-Gtd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="420"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yWZ-3e-cQN">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Attribute String View Controller-->
+        <scene sceneID="fCK-7p-jcE">
+            <objects>
+                <viewController id="yWZ-3e-cQN" customClass="AttributeStringViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="czr-gT-Hql"/>
+                        <viewControllerLayoutGuide type="bottom" id="bye-GS-kNu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bty-Ee-Fcp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qP-X0-OmH" userLabel="Label01">
+                                <rect key="frame" x="20" y="28" width="560" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label01">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDU-f9-3qv" userLabel="Label02">
+                                <rect key="frame" x="20" y="88" width="560" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label02">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aje-Pm-Hrf" userLabel="Label03">
+                                <rect key="frame" x="20" y="148" width="560" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label03">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sV7-Xq-lhm" userLabel="Label04">
+                                <rect key="frame" x="20" y="208" width="560" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label04">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmt-Ap-ZMk" userLabel="Label05">
+                                <rect key="frame" x="20" y="268" width="560" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label05">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nus-G9-WRc" userLabel="Label06">
+                                <rect key="frame" x="20" y="296" width="560" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9qP-X0-OmH" firstAttribute="leading" secondItem="bty-Ee-Fcp" secondAttribute="leadingMargin" id="3QS-zI-tOk"/>
+                            <constraint firstItem="nus-G9-WRc" firstAttribute="leading" secondItem="bty-Ee-Fcp" secondAttribute="leadingMargin" id="Bge-vv-1Xf"/>
+                            <constraint firstItem="sV7-Xq-lhm" firstAttribute="top" secondItem="aje-Pm-Hrf" secondAttribute="bottom" constant="40" id="ZM8-Dv-1tf"/>
+                            <constraint firstItem="aje-Pm-Hrf" firstAttribute="top" secondItem="XDU-f9-3qv" secondAttribute="bottom" constant="40" id="cSV-Mh-Ytx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sV7-Xq-lhm" secondAttribute="trailing" id="daC-Yo-M1U"/>
+                            <constraint firstItem="XDU-f9-3qv" firstAttribute="trailing" secondItem="bty-Ee-Fcp" secondAttribute="trailingMargin" id="dgT-jj-eJC"/>
+                            <constraint firstItem="XDU-f9-3qv" firstAttribute="leading" secondItem="bty-Ee-Fcp" secondAttribute="leadingMargin" id="f0g-FV-Kj6"/>
+                            <constraint firstItem="Xmt-Ap-ZMk" firstAttribute="leading" secondItem="bty-Ee-Fcp" secondAttribute="leadingMargin" id="gIt-kM-Xlm"/>
+                            <constraint firstItem="aje-Pm-Hrf" firstAttribute="leading" secondItem="bty-Ee-Fcp" secondAttribute="leadingMargin" id="gLl-IB-EOb"/>
+                            <constraint firstItem="Xmt-Ap-ZMk" firstAttribute="trailing" secondItem="bty-Ee-Fcp" secondAttribute="trailingMargin" id="ir9-pB-C7i"/>
+                            <constraint firstItem="Xmt-Ap-ZMk" firstAttribute="top" secondItem="sV7-Xq-lhm" secondAttribute="bottom" constant="40" id="jWy-vc-gX5"/>
+                            <constraint firstItem="9qP-X0-OmH" firstAttribute="trailing" secondItem="bty-Ee-Fcp" secondAttribute="trailingMargin" id="kK4-A7-SkE"/>
+                            <constraint firstItem="9qP-X0-OmH" firstAttribute="top" secondItem="czr-gT-Hql" secondAttribute="bottom" constant="8" symbolic="YES" id="nsP-i3-TsY"/>
+                            <constraint firstItem="sV7-Xq-lhm" firstAttribute="leading" secondItem="bty-Ee-Fcp" secondAttribute="leadingMargin" id="p90-QC-hmv"/>
+                            <constraint firstItem="aje-Pm-Hrf" firstAttribute="trailing" secondItem="bty-Ee-Fcp" secondAttribute="trailingMargin" id="pOU-t2-hPk"/>
+                            <constraint firstItem="XDU-f9-3qv" firstAttribute="top" secondItem="9qP-X0-OmH" secondAttribute="bottom" constant="40" id="snd-p7-AW7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nus-G9-WRc" secondAttribute="trailing" id="srS-Xm-aSu"/>
+                            <constraint firstItem="nus-G9-WRc" firstAttribute="top" secondItem="Xmt-Ap-ZMk" secondAttribute="bottom" constant="8" symbolic="YES" id="ubu-lM-QM6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="9qP-X0-OmH" id="JQ4-oq-q11"/>
+                        <outlet property="label2" destination="XDU-f9-3qv" id="dUb-cu-WTD"/>
+                        <outlet property="label3" destination="aje-Pm-Hrf" id="XrH-AT-MjJ"/>
+                        <outlet property="label4" destination="sV7-Xq-lhm" id="bdN-qr-rfE"/>
+                        <outlet property="label5" destination="Xmt-Ap-ZMk" id="cDk-oC-YgZ"/>
+                        <outlet property="label6" destination="nus-G9-WRc" id="xIb-lQ-wnz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2RT-MN-QeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="401"/>
+        </scene>
+    </scenes>
+</document>

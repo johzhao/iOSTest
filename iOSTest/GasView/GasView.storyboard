@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IXO-Rs-IST">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gas View Controller-->
+        <scene sceneID="UfX-Gg-XMa">
+            <objects>
+                <viewController id="IXO-Rs-IST" customClass="GasViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B0v-8K-zss"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wt4-4h-c1x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QXL-jc-7Ha">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9if-oW-46s">
+                                <rect key="frame" x="18" y="28" width="564" height="31"/>
+                                <connections>
+                                    <action selector="slideValueChanged:" destination="IXO-Rs-IST" eventType="valueChanged" id="qQd-gH-URU"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBI-Xs-MDO">
+                                <rect key="frame" x="20" y="66" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gas_plate" translatesAutoresizingMaskIntoConstraints="NO" id="PvE-AB-P4P">
+                                <rect key="frame" x="185" y="242" width="229" height="116"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gas_indicator" translatesAutoresizingMaskIntoConstraints="NO" id="NrK-Nn-OWr">
+                                <rect key="frame" x="254" y="339" width="93" height="34"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iBI-Xs-MDO" firstAttribute="top" secondItem="9if-oW-46s" secondAttribute="bottom" constant="8" symbolic="YES" id="BZi-KV-rG4"/>
+                            <constraint firstItem="9if-oW-46s" firstAttribute="top" secondItem="B0v-8K-zss" secondAttribute="bottom" constant="8" symbolic="YES" id="Bpv-h6-OM3"/>
+                            <constraint firstItem="9if-oW-46s" firstAttribute="trailing" secondItem="QXL-jc-7Ha" secondAttribute="trailingMargin" id="Ejp-N1-dRy"/>
+                            <constraint firstItem="NrK-Nn-OWr" firstAttribute="bottom" secondItem="PvE-AB-P4P" secondAttribute="bottom" constant="15" id="FKD-ot-jxQ"/>
+                            <constraint firstItem="NrK-Nn-OWr" firstAttribute="centerX" secondItem="QXL-jc-7Ha" secondAttribute="centerX" id="Rp9-du-edw"/>
+                            <constraint firstItem="iBI-Xs-MDO" firstAttribute="leading" secondItem="QXL-jc-7Ha" secondAttribute="leadingMargin" id="TSp-JZ-zqU"/>
+                            <constraint firstItem="9if-oW-46s" firstAttribute="leading" secondItem="QXL-jc-7Ha" secondAttribute="leadingMargin" id="Wgv-5D-vop"/>
+                            <constraint firstItem="PvE-AB-P4P" firstAttribute="centerX" secondItem="QXL-jc-7Ha" secondAttribute="centerX" id="Zks-wh-6KV"/>
+                            <constraint firstItem="PvE-AB-P4P" firstAttribute="centerY" secondItem="QXL-jc-7Ha" secondAttribute="centerY" id="aYS-9O-Qf2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iBI-Xs-MDO" secondAttribute="trailing" id="qos-dJ-F3o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="NrK-Nn-OWr" id="CsO-zN-3uD"/>
+                        <outlet property="plate" destination="PvE-AB-P4P" id="rP4-YI-fuh"/>
+                        <outlet property="slider" destination="9if-oW-46s" id="61e-7i-36M"/>
+                        <outlet property="valueLabel" destination="iBI-Xs-MDO" id="r0T-B9-l2P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULZ-ej-B7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="439"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gas_indicator" width="93" height="34"/>
+        <image name="gas_plate" width="229" height="116"/>
+    </resources>
+</document>

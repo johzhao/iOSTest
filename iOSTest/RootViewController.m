@@ -20,6 +20,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.itemArray = @[
+                       @"AttributeString",
+                       @"AutoLayout",
+                       @"Carousel",
+                       @"Chat",
+                       @"Container",
+                       @"CoreText",
+                       @"DiskButtons",
+                       @"DoorState",
+                       @"GasView",
+                       @"ImageTextButton",
+                       @"Map",
+                       @"Popover",
+                       @"Presentation",
+                       @"Route",
+                       @"ScrollView",
+                       @"Segment",
+                       @"TableView",
+                       @"TextField",
+                       @"TextKit",
+                       @"TTSEngine",
+                       @"WebView",
                        ];
 }
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fGc-Ty-uss">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Image Text Button View Controller-->
+        <scene sceneID="XFF-EB-2SD">
+            <objects>
+                <viewController id="fGc-Ty-uss" customClass="ImageTextButtonViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X5H-lp-0BV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zyt-aY-nfC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iIQ-CN-gjK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVz-F1-u8a" customClass="UIImageTextButton">
+                                <rect key="frame" x="265" y="265" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="b6n-6b-bpe"/>
+                                    <constraint firstAttribute="height" constant="70" id="fFR-e9-5g8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="车门上锁" image="car_door_lock">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IVz-F1-u8a" firstAttribute="centerX" secondItem="iIQ-CN-gjK" secondAttribute="centerX" id="gEr-Sm-Ohh"/>
+                            <constraint firstItem="IVz-F1-u8a" firstAttribute="centerY" secondItem="iIQ-CN-gjK" secondAttribute="centerY" id="gfM-ct-tbN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button02" destination="IVz-F1-u8a" id="Uq4-XS-Z5Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ayn-n2-vPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317" y="407"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car_door_lock" width="42" height="42"/>
+    </resources>
+</document>

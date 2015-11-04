@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BbG-dW-Qwz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="3AY-hI-j8m">
+            <objects>
+                <viewController id="BbG-dW-Qwz" customClass="ChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ucV-kO-n44"/>
+                        <viewControllerLayoutGuide type="bottom" id="HWf-c0-gPl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fFy-lb-D8h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cqf-4K-dBx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChatMessageCellIdentifier" id="nEA-4a-rcC" customClass="ChatMessageViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nEA-4a-rcC" id="ACQ-vQ-H0K">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_headimage" translatesAutoresizingMaskIntoConstraints="NO" id="YId-m4-dwB" userLabel="header">
+                                                    <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="4tF-p7-72c"/>
+                                                        <constraint firstAttribute="width" constant="40" id="ggJ-Wk-EJp"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="6ZR-FR-9Qd" userLabel="container">
+                                                    <rect key="frame" x="56" y="8" width="263" height="84"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_bubble_received" translatesAutoresizingMaskIntoConstraints="NO" id="FW1-yE-oPJ" userLabel="chat_bk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="263" height="84"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="看你后台跟JPush集成的时候咋定义？手机号也是唯一的标识符，也可以" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3o-nm-k9q" userLabel="message">
+                                                            <rect key="frame" x="16" y="0.0" width="239" height="72"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="FW1-yE-oPJ" firstAttribute="leading" secondItem="6ZR-FR-9Qd" secondAttribute="leading" id="323-5m-xqk"/>
+                                                        <constraint firstAttribute="trailing" secondItem="r3o-nm-k9q" secondAttribute="trailing" constant="8" id="8No-2u-hgC"/>
+                                                        <constraint firstAttribute="bottom" secondItem="r3o-nm-k9q" secondAttribute="bottom" constant="12" id="IQm-Qc-NdW"/>
+                                                        <constraint firstItem="r3o-nm-k9q" firstAttribute="top" secondItem="6ZR-FR-9Qd" secondAttribute="top" id="JfG-SQ-7lc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="FW1-yE-oPJ" secondAttribute="bottom" id="ddN-Nq-z6i"/>
+                                                        <constraint firstItem="FW1-yE-oPJ" firstAttribute="top" secondItem="6ZR-FR-9Qd" secondAttribute="top" id="lBL-6P-KpZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="FW1-yE-oPJ" secondAttribute="trailing" id="ySJ-Sz-63s"/>
+                                                        <constraint firstItem="r3o-nm-k9q" firstAttribute="leading" secondItem="6ZR-FR-9Qd" secondAttribute="leading" constant="16" id="zDH-Wx-bbc"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6ZR-FR-9Qd" firstAttribute="bottom" secondItem="ACQ-vQ-H0K" secondAttribute="bottomMargin" id="1WR-Kr-HeP"/>
+                                                <constraint firstItem="6ZR-FR-9Qd" firstAttribute="width" secondItem="ACQ-vQ-H0K" secondAttribute="width" multiplier="0.7" id="29Q-rY-97J"/>
+                                                <constraint firstItem="6ZR-FR-9Qd" firstAttribute="top" secondItem="ACQ-vQ-H0K" secondAttribute="topMargin" id="Kv4-BV-Df6"/>
+                                                <constraint firstItem="YId-m4-dwB" firstAttribute="top" secondItem="ACQ-vQ-H0K" secondAttribute="topMargin" id="QnT-KD-Sy5"/>
+                                                <constraint firstItem="YId-m4-dwB" firstAttribute="leading" secondItem="ACQ-vQ-H0K" secondAttribute="leadingMargin" id="c6Q-L2-y2e"/>
+                                                <constraint firstItem="6ZR-FR-9Qd" firstAttribute="leading" secondItem="YId-m4-dwB" secondAttribute="trailing" constant="8" symbolic="YES" id="tNW-oU-JbT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="containerView" destination="6ZR-FR-9Qd" id="hJY-uf-lvO"/>
+                                            <outlet property="headerImageView" destination="YId-m4-dwB" id="hbd-fL-Thr"/>
+                                            <outlet property="messageBkImageView" destination="FW1-yE-oPJ" id="AhT-SK-9OH"/>
+                                            <outlet property="messageLabel" destination="r3o-nm-k9q" id="Tu1-cs-3ka"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BbG-dW-Qwz" id="jNf-tr-ihg"/>
+                                    <outlet property="delegate" destination="BbG-dW-Qwz" id="mSB-Zn-xyw"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WkD-eY-gPw">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dMD-3g-gkI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cqf-4K-dBx" firstAttribute="top" secondItem="fFy-lb-D8h" secondAttribute="top" id="1wx-z4-QTh"/>
+                            <constraint firstItem="HWf-c0-gPl" firstAttribute="top" secondItem="cqf-4K-dBx" secondAttribute="bottom" id="I4P-0h-LlT"/>
+                            <constraint firstItem="WkD-eY-gPw" firstAttribute="leading" secondItem="fFy-lb-D8h" secondAttribute="leading" id="Kep-pH-QCd"/>
+                            <constraint firstAttribute="trailing" secondItem="cqf-4K-dBx" secondAttribute="trailing" id="RwX-EJ-Jo2"/>
+                            <constraint firstAttribute="trailing" secondItem="WkD-eY-gPw" secondAttribute="trailing" id="dyP-a7-cNl"/>
+                            <constraint firstAttribute="bottom" secondItem="WkD-eY-gPw" secondAttribute="bottom" id="nrN-ak-ukG"/>
+                            <constraint firstItem="cqf-4K-dBx" firstAttribute="leading" secondItem="fFy-lb-D8h" secondAttribute="leading" id="oyS-Vi-uiw"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="cqf-4K-dBx" id="NhZ-cq-euv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOv-9x-Bbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat_bubble_received" width="32" height="51"/>
+        <image name="chat_headimage" width="40" height="40"/>
+    </resources>
+</document>

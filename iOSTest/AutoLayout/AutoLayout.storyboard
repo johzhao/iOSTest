@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vIw-5S-sIZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="g5v-e6-Kir">
+            <objects>
+                <viewController id="vIw-5S-sIZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Jc-bS-yGq"/>
+                        <viewControllerLayoutGuide type="bottom" id="dFS-7d-CUX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qO6-00-bb8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hL9-bz-Kal" userLabel="nav bar">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <color key="backgroundColor" red="0.71372549019999998" green="0.1058823529" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="wzz-Th-9Zp"/>
+                                </constraints>
+                            </view>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="1Mg-gL-30d" userLabel="carousel">
+                                <rect key="frame" x="0.0" y="64" width="320" height="226"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="751" image="carousel1" translatesAutoresizingMaskIntoConstraints="NO" id="z6H-PK-NZV">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="226"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="z6H-PK-NZV" secondAttribute="height" multiplier="640:453" id="bfL-AB-pW5"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="z6H-PK-NZV" secondAttribute="bottom" id="76d-jF-iOj"/>
+                                    <constraint firstItem="z6H-PK-NZV" firstAttribute="leading" secondItem="1Mg-gL-30d" secondAttribute="leading" id="7lg-fI-Q9Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="z6H-PK-NZV" secondAttribute="trailing" id="k2K-rO-ubM"/>
+                                    <constraint firstItem="z6H-PK-NZV" firstAttribute="top" secondItem="1Mg-gL-30d" secondAttribute="top" id="krv-Ss-v7k"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYd-Ze-lTL" userLabel="weather">
+                                <rect key="frame" x="0.0" y="290" width="320" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.62813944870000005" blue="0.1155834687" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="o9z-Q2-Rov"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gP4-Ww-Lk7" userLabel="buttons">
+                                <rect key="frame" x="0.0" y="320" width="320" height="110"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EU4-cr-5KN" userLabel="tabbar">
+                                <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3N2-40-Z62"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Mg-gL-30d" firstAttribute="top" secondItem="hL9-bz-Kal" secondAttribute="bottom" id="18T-5D-M9I"/>
+                            <constraint firstItem="WYd-Ze-lTL" firstAttribute="top" secondItem="1Mg-gL-30d" secondAttribute="bottom" id="2cK-PN-NLj"/>
+                            <constraint firstAttribute="trailing" secondItem="WYd-Ze-lTL" secondAttribute="trailing" id="2iM-mK-vkX"/>
+                            <constraint firstItem="hL9-bz-Kal" firstAttribute="leading" secondItem="qO6-00-bb8" secondAttribute="leading" id="5XQ-5K-U6r"/>
+                            <constraint firstItem="gP4-Ww-Lk7" firstAttribute="leading" secondItem="qO6-00-bb8" secondAttribute="leading" id="7HZ-pF-j5o"/>
+                            <constraint firstAttribute="trailing" secondItem="hL9-bz-Kal" secondAttribute="trailing" id="Egu-8p-Kec"/>
+                            <constraint firstAttribute="trailing" secondItem="EU4-cr-5KN" secondAttribute="trailing" id="JKB-DQ-bo9"/>
+                            <constraint firstItem="gP4-Ww-Lk7" firstAttribute="top" secondItem="WYd-Ze-lTL" secondAttribute="bottom" id="Ror-Ov-xAX"/>
+                            <constraint firstItem="WYd-Ze-lTL" firstAttribute="leading" secondItem="qO6-00-bb8" secondAttribute="leading" id="acB-Ov-r0z"/>
+                            <constraint firstItem="EU4-cr-5KN" firstAttribute="top" secondItem="gP4-Ww-Lk7" secondAttribute="bottom" id="cJH-Gw-ohx"/>
+                            <constraint firstItem="hL9-bz-Kal" firstAttribute="top" secondItem="qO6-00-bb8" secondAttribute="top" id="eai-Xh-tEk"/>
+                            <constraint firstAttribute="trailing" secondItem="gP4-Ww-Lk7" secondAttribute="trailing" id="txf-Yc-ssk"/>
+                            <constraint firstItem="1Mg-gL-30d" firstAttribute="leading" secondItem="qO6-00-bb8" secondAttribute="leading" id="v1e-RB-JG6"/>
+                            <constraint firstAttribute="trailing" secondItem="1Mg-gL-30d" secondAttribute="trailing" id="xMq-Fh-Lxd"/>
+                            <constraint firstItem="EU4-cr-5KN" firstAttribute="leading" secondItem="qO6-00-bb8" secondAttribute="leading" id="ySV-sl-gbS"/>
+                            <constraint firstAttribute="bottom" secondItem="EU4-cr-5KN" secondAttribute="bottom" id="zMJ-dC-f1d"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRP-cC-iNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="395"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="carousel1" width="320" height="226"/>
+    </resources>
+</document>
