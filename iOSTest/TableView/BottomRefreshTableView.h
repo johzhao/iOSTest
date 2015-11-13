@@ -10,11 +10,9 @@
 
 @class BottomRefreshTableView;
 
-@protocol BottomRefreshTableViewDelegate <NSObject>
+@protocol BottomRefreshTableViewDataSource <NSObject>
 
 - (void)tableViewRequestToUpdateData:(BottomRefreshTableView*)tableView;
-
-- (void)tableView:(BottomRefreshTableView*)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
@@ -22,7 +20,8 @@
 
 @interface BottomRefreshTableView : UITableView
 
-@property (nonatomic, assign) id<BottomRefreshTableViewDelegate>            updateDataDelegate;
+@property (nonatomic, weak) id<BottomRefreshTableViewDataSource>            updateDataSource;
+@property (nonatomic, weak) id<UITableViewDelegate>                         tableViewDelegate;
 
 - (void)viewDidAppear;
 

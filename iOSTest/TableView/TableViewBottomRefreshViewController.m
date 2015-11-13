@@ -9,7 +9,7 @@
 #import "TableViewBottomRefreshViewController.h"
 #import "BottomRefreshTableView.h"
 
-@interface TableViewBottomRefreshViewController () <UITableViewDataSource, UITableViewDelegate, BottomRefreshTableViewDelegate>
+@interface TableViewBottomRefreshViewController () <UITableViewDataSource, UITableViewDelegate, BottomRefreshTableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray                        *itemArray;
 @property (nonatomic, assign) IBOutlet BottomRefreshTableView       *tableView;
@@ -22,7 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    self.tableView.updateDataDelegate = self;
+    self.tableView.updateDataSource = self;
+    self.tableView.tableViewDelegate = self;
 
     self.itemArray = [NSMutableArray array];
     [self requestToGetMoreFrom:self.itemArray.count];
@@ -94,6 +95,10 @@
 
 #pragma mark - UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 #pragma mark - BottomRefreshTableViewDelegate
 
 - (void)tableViewRequestToUpdateData:(BottomRefreshTableView*)tableView {
@@ -102,9 +107,6 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self requestToGetMoreFrom:self.itemArray.count];
     });
-}
-
-- (void)tableView:(BottomRefreshTableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 @end
