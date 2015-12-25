@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XDh-9C-n0N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d2h-EA-48B">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -197,6 +197,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glT-MC-n9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="315" y="2330"/>
+        </scene>
+        <!--Refresh Table View Controller-->
+        <scene sceneID="PA3-ON-YdS">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="d2h-EA-48B" customClass="RefreshTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GdX-2b-pVz"/>
+                        <viewControllerLayoutGuide type="bottom" id="GOe-uB-bih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QU3-Q8-xec">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dbT-zF-E8Q">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RefreshTableViewCellIdentifier" textLabel="jiX-GX-W85" style="IBUITableViewCellStyleDefault" id="57d-dZ-jAe">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="57d-dZ-jAe" id="698-zR-Cwp">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jiX-GX-W85">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="d2h-EA-48B" id="7Fo-bt-PrY"/>
+                                    <outlet property="delegate" destination="d2h-EA-48B" id="6Sz-Sh-RNd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dbT-zF-E8Q" firstAttribute="leading" secondItem="QU3-Q8-xec" secondAttribute="leading" id="0wA-kd-qru"/>
+                            <constraint firstAttribute="trailing" secondItem="dbT-zF-E8Q" secondAttribute="trailing" id="Nyq-3H-3xb"/>
+                            <constraint firstItem="GOe-uB-bih" firstAttribute="top" secondItem="dbT-zF-E8Q" secondAttribute="bottom" id="THb-Z4-ytW"/>
+                            <constraint firstItem="dbT-zF-E8Q" firstAttribute="top" secondItem="GdX-2b-pVz" secondAttribute="bottom" id="dmh-BC-xt2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="dbT-zF-E8Q" id="EdZ-Qt-8KR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2h-6b-azy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="3238"/>
         </scene>
     </scenes>
 </document>
