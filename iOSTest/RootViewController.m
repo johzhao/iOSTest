@@ -41,6 +41,7 @@
                        @"TextKit",
                        @"TTSEngine",
                        @"WebView",
+                       @"CellHeight",
                        ];
 }
 

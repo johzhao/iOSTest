@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D68718601C2D163E00FD0B90 /* CellHeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D687185F1C2D163E00FD0B90 /* CellHeight.storyboard */; };
+		D68718631C2D167200FD0B90 /* CellHeightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68718621C2D167200FD0B90 /* CellHeightTableViewController.m */; };
 		D69588A01BE9CE3600307B6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D695889F1BE9CE3600307B6B /* main.m */; };
 		D69588A31BE9CE3600307B6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D69588A21BE9CE3600307B6B /* AppDelegate.m */; };
 		D69588A61BE9CE3600307B6B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69588A51BE9CE3600307B6B /* RootViewController.m */; };
@@ -108,6 +110,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D687185F1C2D163E00FD0B90 /* CellHeight.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CellHeight.storyboard; sourceTree = "<group>"; };
+		D68718611C2D167200FD0B90 /* CellHeightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHeightTableViewController.h; sourceTree = "<group>"; };
+		D68718621C2D167200FD0B90 /* CellHeightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellHeightTableViewController.m; sourceTree = "<group>"; };
 		D695889B1BE9CE3600307B6B /* iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D695889F1BE9CE3600307B6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D69588A11BE9CE3600307B6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -290,6 +295,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D687185D1C2D160900FD0B90 /* CellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				D687185F1C2D163E00FD0B90 /* CellHeight.storyboard */,
+				D68718611C2D167200FD0B90 /* CellHeightTableViewController.h */,
+				D68718621C2D167200FD0B90 /* CellHeightTableViewController.m */,
+			);
+			name = CellHeight;
+			sourceTree = "<group>";
+		};
 		D69588921BE9CE3600307B6B = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +355,7 @@
 				D6958A0D1BE9D4A000307B6B /* TextKit */,
 				D6958A111BE9D4A000307B6B /* TTSEngine */,
 				D6958A151BE9D4A000307B6B /* WebView */,
+				D687185D1C2D160900FD0B90 /* CellHeight */,
 			);
 			path = iOSTest;
 			sourceTree = "<group>";
@@ -810,6 +826,7 @@
 				D6958A3C1BE9D4A000307B6B /* Map.storyboard in Resources */,
 				D69588AE1BE9CE3600307B6B /* LaunchScreen.storyboard in Resources */,
 				D6958A2B1BE9D4A000307B6B /* DiskButtons.storyboard in Resources */,
+				D68718601C2D163E00FD0B90 /* CellHeight.storyboard in Resources */,
 				D6A0304F1BFAC7CA0019EE85 /* MJRefresh.bundle in Resources */,
 				D69588AB1BE9CE3600307B6B /* Assets.xcassets in Resources */,
 				D6958A1C1BE9D4A000307B6B /* Carousel.storyboard in Resources */,
@@ -850,6 +867,7 @@
 				D6A030491BFAC7CA0019EE85 /* MJRefreshBackGifFooter.m in Sources */,
 				D6958A3F1BE9D4A000307B6B /* PVAttractionAnnotationView.m in Sources */,
 				D69588A61BE9CE3600307B6B /* RootViewController.m in Sources */,
+				D68718631C2D167200FD0B90 /* CellHeightTableViewController.m in Sources */,
 				D6958A5A1BE9D4A000307B6B /* TextFieldViewController.m in Sources */,
 				D6958A4A1BE9D4A000307B6B /* RouteViewController.m in Sources */,
 				D6958A471BE9D4A000307B6B /* PresentationViewController.m in Sources */,
@@ -1016,6 +1034,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iOSTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myproject.com.iOSTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1028,6 +1047,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iOSTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myproject.com.iOSTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
